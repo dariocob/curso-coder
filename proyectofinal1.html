@@ -1,0 +1,194 @@
+<head>
+  <title>Carrito de compras</title>
+  
+  <script type="text/javascript" src="proyectofinal1.js"></script>
+  <link type="text/css" href="estilo.css" rel="stylesheet" media="screen"/>
+  
+</head>
+  
+  
+  <body>
+    <div id="todo" class="todoNo">
+    <div id="menu" class="menuNo">
+  
+  
+  
+    <div id="div1" name="DIVS"></div>
+    <div id="div2" name="DIVS"></div>
+    <div id="div3" name="DIVS"></div>
+    <div id="div4" name="DIVS"></div>
+    <div id="div5" name="DIVS"></div>
+    <div id="div6" name="DIVS"></div>
+    <div id="div7" name="DIVS"></div>
+    <div id="div8" name="DIVS"></div>
+    <div id="div9" name="DIVS"></div>
+  
+  
+    <div id="divbotones">
+      <input type="button" id="botonTotal" value="Calcular total"/>
+      <input type="button" id="botonDatos" value="Datos personales" disabled="disabled"/>
+      <input type="button" id="botonPago" value="Pago" disabled="disabled"/>
+      <input type="button" id="botonConfirmar" value="Confirmar pedido" disabled="disabled"/>
+    </div>
+  
+  
+    <div id="divZonaCompra" class="divZonaCompraNo">
+  
+  
+    <div id="divTotal" class="divsNo">
+      <p><b>Carrito de la compra, si quiere hacer alguna modificacion aun esta a tiempo:</b></p>
+      <table id="tablaTotal"></table>
+    </div>
+  
+  
+    <div id="divDatos" class="divsNo">
+      <p><b>Introduzca sus datos personales:</b></p>
+  
+    <div id="divDatosPersonales0">
+    <div id="divDatosPersonales1">
+      <label>Nombre completo:</label><br/>
+        <input type="text" id="nombre" value="" size="26" /><br/>
+  
+  
+      <label>DNI:</label><br/>
+        <input type="number" id="dni" value="" size="8" maxlength="8" /><br/>
+  
+  
+      <label>Fecha de nacimiento:</label><br/>
+        <select id="fechaNacimientoDia">
+        <option value=""> dia </option>
+      </select>
+        <select id="fechaNacimientoMes">
+          <option value="">mes</option>
+          <option value="1">Enero</option>
+          <option value="2">Febrero</option>
+          <option value="3">Marzo</option>
+          <option value="4">Abril</option>
+          <option value="5">Mayo</option>
+          <option value="6">Junio</option>
+          <option value="7">Julio</option>
+          <option value="8">Agosto</option>
+          <option value="9">Septiembre</option>
+          <option value="10">Octubre</option>
+          <option value="11">Noviembre</option>
+          <option value="12">Diciembre</option>
+        </select> 
+      <select id="fechaNacimientoAnio">
+        <option value="">  año </option>
+      </select><br/>
+    </div>
+  
+      <div id="divDatosPersonales2">
+        <label>Telefono movil:</label><br/>
+        <input type="text" id="movil" value="" size="8" maxlength="10"/><br/>
+  
+        <label>Email:</label><br/>
+        <input type="text" id="email1" value="" size="25" /><br/>
+  
+        <label>Repita el email:</label><br/>
+        <input type="text" id="email2" value="" size="25" /> 
+      </div>
+    </div>
+  
+  
+    <div id="divDomicilio">
+      <label>Tipo de Calle:</label>
+        <select id="tipoDeCalle">
+          <option value="Avenida">Avenida</option>
+          <option value="Calle"selected="selected">Calle</option>
+        </select>     
+  
+      <label>Nombre calle:</label>
+        <input type="text" id="viaNombre" value="" size="20" /><br/>
+  
+      <label>Nº:</label>
+        <input type="text" id="viaNumero" value="" size="2" />  
+  
+      <label>Departamento:</label>
+        <input type="text" id="viaBloque" value="" size="2" />         
+  
+      <label>Piso:</label>
+        <input type="text" id="viaPiso" value="" size="2" /><br/>
+  
+  
+      <label>Localidad:</label>
+        <input type="text" id="localidad" value="" size="13"/>  
+  
+      <label>Codigo Postal:</label>
+        <input type="text" id="codigoPostal" value="" size="5" maxlength="5"/>  
+  
+      <label>Provincia:</label>
+        <select id="provincia">
+          <option value="">provincia</option>
+          <option value="15">CABA</option>
+          <option value="1">Buenos Aires</option>
+          <option value="2">Catamarca</option>
+          <option value="3">Chaco</option>
+          <option value="4">Chubut</option>
+          <option value="33">Cordoba</option>
+          <option value="5">Corrientes</option>
+          <option value="6">Entre Rios</option>
+          <option value="7">Formosa</option>
+          <option value="8">Jujuy</option>
+          <option value="9">La Pampa</option>
+          <option value="10">La Rioja</option>
+          <option value="11">Mendoza</option>
+          <option value="39">Misiones</option>
+          <option value="12">Neuquen</option>
+          <option value="51">Rio Negro</option>
+          <option value="13">Salta</option>
+          <option value="14">San Juan</option>
+          <option value="16">San Luis</option>
+          <option value="99">Santa Cruz</option>
+          <option value="17">Santa Fe</option>
+          <option value="18">Santiago del Estero</option>
+          <option value="19">Tierra del Fuego</option>
+          <option value="20">Tucuman</option>
+        </select>
+      </div> 
+  </div> 
+  
+  
+    <div id="divPago" class="divsNo">
+      <p><b>Introduzca los datos de la tarjeta de credito/debito donde se cargara el cobro:</b></p>
+  
+  
+      <label>Titular de la tarjeta:</label><br/>
+        <input type="text" id="titular" value="" size="26" /><br/>
+  
+  
+  <div id="metodosDePago">
+    <label><span  id="alertTipoDeTarjeta">Tipo de tarjeta:</span></label><br/>
+      <label for="visa">
+      <input type="radio" id="visa" name="tarjetas" class="logoTarjetas" value="Visa">
+      <img src="img/pago/visa.png"></img>
+    </label>
+    
+    <label for="masterCard">
+      <input type="radio" id="masterCard" name="tarjetas" class="logoTarjetas" value="MasterCard">
+      <img src="img/pago/mastercard.png"></img>
+    </label>
+  
+  </div>
+  
+  
+  <div id="divNumeroTarjeta">
+      <label>Número tarjeta y CVC:</label><br/>
+      <input type="text" id="numeroTarjeta" value="" size="15" maxlength="16" />
+      <input type="text" id="cvcTarjeta" value="" size="2" maxlength="3" /><br/>
+  
+  
+    <select id="mesTarjeta">
+      <option value="">  mes </option>
+    </select>
+  
+    <select id="anioTarjeta">
+    <option value="">  año </option>
+  </select>
+  </div>
+  </div> 
+  </div>
+  </div> 
+  </div>
+  </body>
+ </html>
